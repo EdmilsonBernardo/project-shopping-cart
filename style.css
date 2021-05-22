@@ -1,3 +1,9 @@
+body {
+  background-image: url(./abstract-background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .top-bar {
   align-items: center;
   display: flex;
@@ -31,7 +37,7 @@
 }
 
 .item {
-  border: 2px solid blue;
+  border: 2px solid #1b1a17;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -49,6 +55,8 @@
   flex-grow: 1;
   padding: 10px;
   text-align: center;
+  background-color: #1b1a17;
+  color: #f0e3ca;
 }
 
 .item .item__image {
@@ -56,11 +64,33 @@
 }
 
 .item .item__add {
-  background-color: green;
+  background-color: #1b1a17;
+  color: #f0e3ca;
   border: 0;
   cursor: pointer;
   margin: 0;
   padding: 5px;
+  transition: 0.2s;
+}
+
+.item .item__add:hover {
+  color: #1b1a17;
+  background-color: #51c4d3;
+}
+
+.empty-cart {
+  background-color: #1b1a17;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #f0e3ca;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.empty-cart:hover {
+  background-color: #51c4d3;
+  color: #1b1a17;
 }
 
 .cart {
@@ -73,4 +103,12 @@
   flex-basis: 1;
   font-size: 16pt;
   text-align: center;
+}
+
+.cart__item {
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid #1b1a17;
+  border-radius: 5px;
+  cursor: pointer;
 }

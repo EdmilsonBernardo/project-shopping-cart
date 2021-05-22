@@ -12,7 +12,7 @@ const substractPrice = async (price) => {
 
 const displaysTotalPrice = async (action, price) => {
   const textPrice = document.querySelector('.total-price');
-  textPrice.innerText = await action(price);
+  textPrice.innerText = `TOTAL: R$ ${ await action(price) }`;
 };
 
 const storeItens = () => {
